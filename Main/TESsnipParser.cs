@@ -178,7 +178,8 @@ namespace TESVSnip
 
             if (decompressedSize != outsize) // Check the size of the uncompressed data against what we expected
             {
-                throw new Exception(String.Format("Unexpected Decompressed data size! CompressedSize={2:D} DecompressedSize={0:D} Expected Size={1:D}", decompressedSize, outsize, size));
+                System.Windows.Forms.Application.Exit();
+                //throw new Exception(String.Format("Unexpected Decompressed data size! CompressedSize={2:D} DecompressedSize={0:D} Expected Size={1:D}", decompressedSize, outsize, size));
             }
 
             return compReader;
@@ -211,37 +212,55 @@ namespace TESVSnip
     internal static class FlagDefs
     {
         public static readonly string[] RecFlags1 = {
-                                                        "ESM file",
+                                                        "ESM File",
                                                         null,
                                                         null,
+                                                        //null,
+                                                        "Has Current",
+                                                        //5
                                                         null,
-                                                        null,
-                                                        "Deleted",
-                                                        null,
-                                                        "Localized",
-                                                        null,
-                                                        "Casts shadows",
-                                                        "Quest item / Persistent reference",
-                                                        "Initially disabled",
+                                                        "Marked Deleted",
+                                                        //null,
+                                                        "HasTreeLOD-AddonLODObject",
+                                                        "Localized-IsPerch",
+                                                        //null,
+                                                        "Must Update Anims",
+                                                        //10
+                                                        //"Casts shadows",
+                                                        "HidFromLocMap-CastShad-StartDead",
+                                                        "QuestItem-Persistent",
+                                                        "Initially Disabled",
                                                         "Ignored",
                                                         null,
+                                                        //15
                                                         null,
-                                                        "Visible when distant",
-                                                        "Is full LOD",
-                                                        "Dangerous / Off limits (Interior cell)",
-                                                        "Data is compressed",
-                                                        "Can't wait",
-                                                        null,
-                                                        null,
-                                                        null,
-                                                        null,
+                                                        "Visible When Distant",
+                                                        "Is full LOD-Random Anim Start",
+                                                        "Danger-OffLimits-IsRadSt-PortalStrict",
+                                                        "Compressed",
+                                                        //20
+                                                        "Can't Wait",
                                                         null,
                                                         null,
                                                         null,
-                                                        null,
-                                                        null,
-                                                        null,
-                                                        null,
+                                                        //null,
+                                                        "Is Marker",
+                                                        //25
+                                                        //null,
+                                                        "IgnoreObjInteract",
+                                                        //null,
+                                                        "Obstacle-NoAIAcquire",
+                                                        //null,
+                                                        "NavMeshFilter",
+                                                        //null,
+                                                        "NavMeshBoundBox-Respawns",
+                                                        //null,
+                                                        "Reflect-MustExitToTalk",
+                                                        //30
+                                                        //null,
+                                                        "ChildCanUse-NoHavokSettle",
+                                                        //null,
+                                                        "NavMeshGround-NoRespawn",
                                                         null,
                                                     };
 

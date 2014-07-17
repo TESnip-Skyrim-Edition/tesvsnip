@@ -131,7 +131,7 @@ namespace TESVSnip
                 uint i = 0;
                 if (s == "XXXX")
                 {
-                    ushort xsize =  br.ReadUInt16();
+                    ushort xsize = br.ReadUInt16();
                     if (xsize != 4)
                     {
                         throw new TESParserException(
@@ -141,17 +141,18 @@ namespace TESVSnip
                     s = ReadRecName(br);
                 }
                 var r = new SubRecord(this, s, br, i);
-                AmountRead += (uint) (r.Size2);
+                AmountRead += (uint)(r.Size2);
                 SubRecords.Add(r);
             }
-            descNameOverride = DefaultDescriptiveName;
-            UpdateShortDescription();
-            //br.BaseStream.Position+=Size;
-            if (AmountRead != Size)
-            {
-                throw new TESParserException(
-                    String.Format("Subrecord block did not match the size specified in the record header. Name={3} Header size={0:D} Subrecord Size={1:D} CompressedRecord={2:G}", Size, AmountRead, compressedRecord, name));
-            }
+                descNameOverride = DefaultDescriptiveName;
+                UpdateShortDescription();
+                //br.BaseStream.Position+=Size;
+                if (AmountRead != Size)
+                {
+                    System.Windows.Forms.Application.Exit();
+                   // throw new TESParserException(
+                      //  String.Format("Subrecord block did not match the size specified in the record header. Name={3} Header size={0:D} Subrecord Size={1:D} CompressedRecord={2:G}", Size, AmountRead, compressedRecord, name));
+                }
         }
 
         private Record(Record r)
