@@ -149,6 +149,12 @@
   <data name="saveToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Save</value>
   </data>
+  <data name="saveAsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="saveAsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Save &amp;As</value>
+  </data>
   <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 22</value>
   </data>
@@ -159,7 +165,7 @@
     <value>146, 22</value>
   </data>
   <data name="closeAllToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close &amp;All</value>
+    <value>Close All</value>
   </data>
   <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 6</value>
@@ -225,6 +231,21 @@
   <data name="pasteToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Paste</value>
   </data>
+  <data name="pasteNewToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pasteNewToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Alt+V</value>
+  </data>
+  <data name="pasteNewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 22</value>
+  </data>
+  <data name="pasteNewToolStripMenuItem.Text" xml:space="preserve">
+    <value>Paste as New</value>
+  </data>
+  <data name="pasteNewToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Pastes records in the clipbook giving them new EDID's</value>
+  </data>
   <data name="deleteToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -234,6 +255,15 @@
   <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Delete</value>
   </data>
+  <data name="insertGroupToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="insertGroupToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 22</value>
+  </data>
+  <data name="insertGroupToolStripMenuItem.Text" xml:space="preserve">
+    <value>New &amp;Group</value>
+  </data>
   <data name="insertRecordToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -241,16 +271,19 @@
     <value>235, 22</value>
   </data>
   <data name="insertRecordToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;New record</value>
+    <value>New &amp;Record</value>
   </data>
   <data name="insertSubrecordToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="insertSubrecordToolStripMenuItem.ShortcutKeyDisplayString" xml:space="preserve">
+    <value />
   </data>
   <data name="insertSubrecordToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>235, 22</value>
   </data>
   <data name="insertSubrecordToolStripMenuItem.Text" xml:space="preserve">
-    <value>New subrecord</value>
+    <value>New &amp;Subrecord</value>
   </data>
   <data name="editSelectedToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+E</value>
@@ -362,6 +395,12 @@
   </data>
   <data name="lookupFormidsToolStripMenuItem.Text" xml:space="preserve">
     <value>Lookup formids</value>
+  </data>
+  <data name="uTF8ModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
+  <data name="uTF8ModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;UTF-8 Mode</value>
   </data>
   <data name="useWindowsClipboardToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 22</value>
@@ -558,6 +597,9 @@
   <data name="sanitizeToolStripMenuItem.Text" xml:space="preserve">
     <value>Sanitize</value>
   </data>
+  <data name="sanitizeToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Sanitize the currently selected plugin. Puts all the groups in order and sorts loose records in the correct group.</value>
+  </data>
   <data name="stripEDIDsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 22</value>
   </data>
@@ -569,6 +611,9 @@
   </data>
   <data name="findDuplicatedFormIDToolStripMenuItem.Text" xml:space="preserve">
     <value>Find duplicated FormID</value>
+  </data>
+  <data name="findDuplicatedFormIDToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Select the first duplicate FormID in the currently selected plugin.</value>
   </data>
   <data name="dumpEDIDListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 22</value>
@@ -591,11 +636,17 @@
   <data name="findNonconformingRecordToolStripMenuItem.Text" xml:space="preserve">
     <value>Find &amp;nonconforming record</value>
   </data>
+  <data name="compileScriptToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="compileScriptToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 22</value>
   </data>
   <data name="compileScriptToolStripMenuItem.Text" xml:space="preserve">
     <value>Compile script</value>
+  </data>
+  <data name="compileAllToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="compileAllToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 22</value>
@@ -614,6 +665,9 @@
   </data>
   <data name="makeEsmToolStripMenuItem.Text" xml:space="preserve">
     <value>Make esm</value>
+  </data>
+  <data name="makeEsmToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Converts an esp file to an esm. Only sets the correct bit and changes the file extension. </value>
   </data>
   <data name="martigensToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 22</value>
@@ -647,6 +701,24 @@
   </data>
   <data name="reorderSubrecordsToolStripMenuItem.ToolTipText" xml:space="preserve">
     <value>Attempt to restucture the Current Subrecord to match XML</value>
+  </data>
+  <data name="newFormIDToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 22</value>
+  </data>
+  <data name="newFormIDToolStripMenuItem.Text" xml:space="preserve">
+    <value>New FormID</value>
+  </data>
+  <data name="newFormIDToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Gives all selected records a new FormID from the TES4 Next Object field. Also updates all references.</value>
+  </data>
+  <data name="newFormIDNoReferenceUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 22</value>
+  </data>
+  <data name="newFormIDNoReferenceUpdateToolStripMenuItem.Text" xml:space="preserve">
+    <value>New FormID No reference update</value>
+  </data>
+  <data name="newFormIDNoReferenceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Gives all selected records a new FormID from the TES4 Next Object field.</value>
   </data>
   <data name="spellsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 20</value>
@@ -1376,6 +1448,12 @@
   <data name="&gt;&gt;saveToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;saveAsToolStripMenuItem.Name" xml:space="preserve">
+    <value>saveAsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;saveAsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;closeToolStripMenuItem.Name" xml:space="preserve">
     <value>closeToolStripMenuItem</value>
   </data>
@@ -1436,10 +1514,22 @@
   <data name="&gt;&gt;pasteToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;pasteNewToolStripMenuItem.Name" xml:space="preserve">
+    <value>pasteNewToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;pasteNewToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;deleteToolStripMenuItem.Name" xml:space="preserve">
     <value>deleteToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;deleteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;insertGroupToolStripMenuItem.Name" xml:space="preserve">
+    <value>insertGroupToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;insertGroupToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;insertRecordToolStripMenuItem.Name" xml:space="preserve">
@@ -1548,6 +1638,12 @@
     <value>lookupFormidsToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;lookupFormidsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uTF8ModeToolStripMenuItem.Name" xml:space="preserve">
+    <value>uTF8ModeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;uTF8ModeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;useWindowsClipboardToolStripMenuItem.Name" xml:space="preserve">
@@ -1812,6 +1908,18 @@
     <value>reorderSubrecordsToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;reorderSubrecordsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newFormIDToolStripMenuItem.Name" xml:space="preserve">
+    <value>newFormIDToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;newFormIDToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newFormIDNoReferenceUpdateToolStripMenuItem.Name" xml:space="preserve">
+    <value>newFormIDNoReferenceUpdateToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;newFormIDNoReferenceUpdateToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OpenModDialog.Name" xml:space="preserve">

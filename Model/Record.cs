@@ -108,6 +108,7 @@ namespace TESVSnip
 
         internal Record(string name, uint Size, BinaryReader br, bool Oblivion)
         {
+            bool compressedRecord = false;
             SubRecords = new AdvancedList<SubRecord>(1);
             SubRecords.AllowSorting = false;
             Name = name;
@@ -121,6 +122,7 @@ namespace TESVSnip
                 uint newSize = br.ReadUInt32();
                 br = Decompressor.Decompress(br, (int) (Size - 4), (int) newSize);
                 Size = newSize;
+                compressedRecord = true;
             }
             uint AmountRead = 0;
             while (AmountRead < Size)
@@ -129,21 +131,28 @@ namespace TESVSnip
                 uint i = 0;
                 if (s == "XXXX")
                 {
-                    br.ReadUInt16();
+                    ushort xsize = br.ReadUInt16();
+                    if (xsize != 4)
+                    {
+                        throw new TESParserException(
+                            String.Format("Unexpected Subrecord block XXXX size! Expected 4 but found {0:D}!", xsize));
+                    }
                     i = br.ReadUInt32();
                     s = ReadRecName(br);
                 }
                 var r = new SubRecord(this, s, br, i);
-                AmountRead += (uint) (r.Size2);
+                AmountRead += (uint)(r.Size2);
                 SubRecords.Add(r);
             }
-            if (AmountRead > Size)
-            {
-                throw new TESParserException("Subrecord block did not match the size specified in the record header");
-            }
-            descNameOverride = DefaultDescriptiveName;
-            UpdateShortDescription();
-            //br.BaseStream.Position+=Size;
+                descNameOverride = DefaultDescriptiveName;
+                UpdateShortDescription();
+                //br.BaseStream.Position+=Size;
+                if (AmountRead != Size)
+                {
+                    System.Windows.Forms.Application.Exit();
+                   // throw new TESParserException(
+                      //  String.Format("Subrecord block did not match the size specified in the record header. Name={3} Header size={0:D} Subrecord Size={1:D} CompressedRecord={2:G}", Size, AmountRead, compressedRecord, name));
+                }
         }
 
         private Record(Record r)
@@ -617,6 +626,7 @@ namespace TESVSnip
                     }
                 case ElementValueType.Str4:
                 case ElementValueType.BString:
+                case ElementValueType.IString:
                 case ElementValueType.String:
                     {
                         var s = (string) cond.value;

@@ -46,6 +46,7 @@ namespace TESVSnip {
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openNewPluginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -56,7 +57,9 @@ namespace TESVSnip {
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.insertGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertSubrecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editSelectedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,6 +78,7 @@ namespace TESVSnip {
             this.hexModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.useNewSubrecordEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lookupFormidsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uTF8ModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.useWindowsClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.noWindowsSoundsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.disableHyperlinksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -119,6 +123,8 @@ namespace TESVSnip {
             this.createRecordStructureXmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mergeRecordsXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reorderSubrecordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newFormIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newFormIDNoReferenceUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenModDialog = new System.Windows.Forms.OpenFileDialog();
             this.SaveModDialog = new System.Windows.Forms.SaveFileDialog();
             this.SaveEdidListDialog = new System.Windows.Forms.SaveFileDialog();
@@ -177,6 +183,7 @@ namespace TESVSnip {
             this.newToolStripMenuItem,
             this.openNewPluginToolStripMenuItem,
             this.saveToolStripMenuItem,
+            this.saveAsToolStripMenuItem,
             this.closeToolStripMenuItem,
             this.closeAllToolStripMenuItem,
             this.toolStripSeparator3,
@@ -203,6 +210,12 @@ namespace TESVSnip {
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            resources.ApplyResources(this.saveAsToolStripMenuItem, "saveAsToolStripMenuItem");
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // closeToolStripMenuItem
             // 
@@ -244,7 +257,9 @@ namespace TESVSnip {
             this.cutToolStripMenuItem,
             this.copyToolStripMenuItem,
             this.pasteToolStripMenuItem,
+            this.pasteNewToolStripMenuItem,
             this.deleteToolStripMenuItem,
+            this.insertGroupToolStripMenuItem,
             this.insertRecordToolStripMenuItem,
             this.insertSubrecordToolStripMenuItem,
             this.editSelectedToolStripMenuItem,
@@ -277,11 +292,23 @@ namespace TESVSnip {
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
+            // pasteNewToolStripMenuItem
+            // 
+            resources.ApplyResources(this.pasteNewToolStripMenuItem, "pasteNewToolStripMenuItem");
+            this.pasteNewToolStripMenuItem.Name = "pasteNewToolStripMenuItem";
+            this.pasteNewToolStripMenuItem.Click += new System.EventHandler(this.pasteNewToolStripMenuItem_Click);
+            // 
             // deleteToolStripMenuItem
             // 
             resources.ApplyResources(this.deleteToolStripMenuItem, "deleteToolStripMenuItem");
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // insertGroupToolStripMenuItem
+            // 
+            resources.ApplyResources(this.insertGroupToolStripMenuItem, "insertGroupToolStripMenuItem");
+            this.insertGroupToolStripMenuItem.Name = "insertGroupToolStripMenuItem";
+            this.insertGroupToolStripMenuItem.Click += new System.EventHandler(this.insertGroupToolStripMenuItem3_Click);
             // 
             // insertRecordToolStripMenuItem
             // 
@@ -377,6 +404,7 @@ namespace TESVSnip {
             this.hexModeToolStripMenuItem,
             this.useNewSubrecordEditorToolStripMenuItem,
             this.lookupFormidsToolStripMenuItem,
+            this.uTF8ModeToolStripMenuItem,
             this.useWindowsClipboardToolStripMenuItem,
             this.noWindowsSoundsToolStripMenuItem,
             this.disableHyperlinksToolStripMenuItem,
@@ -412,6 +440,15 @@ namespace TESVSnip {
             this.lookupFormidsToolStripMenuItem.Name = "lookupFormidsToolStripMenuItem";
             resources.ApplyResources(this.lookupFormidsToolStripMenuItem, "lookupFormidsToolStripMenuItem");
             this.lookupFormidsToolStripMenuItem.Click += new System.EventHandler(this.lookupFormidsToolStripMenuItem_Click);
+            // 
+            // uTF8ModeToolStripMenuItem
+            // 
+            this.uTF8ModeToolStripMenuItem.Checked = true;
+            this.uTF8ModeToolStripMenuItem.CheckOnClick = true;
+            this.uTF8ModeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.uTF8ModeToolStripMenuItem.Name = "uTF8ModeToolStripMenuItem";
+            resources.ApplyResources(this.uTF8ModeToolStripMenuItem, "uTF8ModeToolStripMenuItem");
+            this.uTF8ModeToolStripMenuItem.Click += new System.EventHandler(this.uTF8ModeToolStripMenuItem_Click);
             // 
             // useWindowsClipboardToolStripMenuItem
             // 
@@ -619,12 +656,15 @@ namespace TESVSnip {
             this.martigensToolStripMenuItem,
             this.createRecordStructureXmlToolStripMenuItem,
             this.mergeRecordsXMLToolStripMenuItem,
-            this.reorderSubrecordsToolStripMenuItem});
+            this.reorderSubrecordsToolStripMenuItem,
+            this.newFormIDToolStripMenuItem,
+            this.newFormIDNoReferenceUpdateToolStripMenuItem});
             this.spellsToolStripMenuItem.Name = "spellsToolStripMenuItem";
             resources.ApplyResources(this.spellsToolStripMenuItem, "spellsToolStripMenuItem");
             // 
             // sanitizeToolStripMenuItem
             // 
+            this.sanitizeToolStripMenuItem.AutoToolTip = true;
             this.sanitizeToolStripMenuItem.Name = "sanitizeToolStripMenuItem";
             resources.ApplyResources(this.sanitizeToolStripMenuItem, "sanitizeToolStripMenuItem");
             this.sanitizeToolStripMenuItem.Click += new System.EventHandler(this.sanitizeToolStripMenuItem_Click);
@@ -637,6 +677,7 @@ namespace TESVSnip {
             // 
             // findDuplicatedFormIDToolStripMenuItem
             // 
+            this.findDuplicatedFormIDToolStripMenuItem.AutoToolTip = true;
             this.findDuplicatedFormIDToolStripMenuItem.Name = "findDuplicatedFormIDToolStripMenuItem";
             resources.ApplyResources(this.findDuplicatedFormIDToolStripMenuItem, "findDuplicatedFormIDToolStripMenuItem");
             this.findDuplicatedFormIDToolStripMenuItem.Click += new System.EventHandler(this.findDuplicatedFormIDToolStripMenuItem_Click);
@@ -661,14 +702,14 @@ namespace TESVSnip {
             // 
             // compileScriptToolStripMenuItem
             // 
-            this.compileScriptToolStripMenuItem.Name = "compileScriptToolStripMenuItem";
             resources.ApplyResources(this.compileScriptToolStripMenuItem, "compileScriptToolStripMenuItem");
+            this.compileScriptToolStripMenuItem.Name = "compileScriptToolStripMenuItem";
             this.compileScriptToolStripMenuItem.Click += new System.EventHandler(this.compileScriptToolStripMenuItem_Click);
             // 
             // compileAllToolStripMenuItem
             // 
-            this.compileAllToolStripMenuItem.Name = "compileAllToolStripMenuItem";
             resources.ApplyResources(this.compileAllToolStripMenuItem, "compileAllToolStripMenuItem");
+            this.compileAllToolStripMenuItem.Name = "compileAllToolStripMenuItem";
             this.compileAllToolStripMenuItem.Click += new System.EventHandler(this.compileAllToolStripMenuItem_Click);
             // 
             // generateLLXmlToolStripMenuItem
@@ -679,6 +720,7 @@ namespace TESVSnip {
             // 
             // makeEsmToolStripMenuItem
             // 
+            this.makeEsmToolStripMenuItem.AutoToolTip = true;
             this.makeEsmToolStripMenuItem.Name = "makeEsmToolStripMenuItem";
             resources.ApplyResources(this.makeEsmToolStripMenuItem, "makeEsmToolStripMenuItem");
             this.makeEsmToolStripMenuItem.Click += new System.EventHandler(this.makeEsmToolStripMenuItem_Click);
@@ -706,6 +748,19 @@ namespace TESVSnip {
             this.reorderSubrecordsToolStripMenuItem.Name = "reorderSubrecordsToolStripMenuItem";
             resources.ApplyResources(this.reorderSubrecordsToolStripMenuItem, "reorderSubrecordsToolStripMenuItem");
             this.reorderSubrecordsToolStripMenuItem.Click += new System.EventHandler(this.reorderSubrecordsToolStripMenuItem_Click);
+            // 
+            // newFormIDToolStripMenuItem
+            // 
+            this.newFormIDToolStripMenuItem.AutoToolTip = true;
+            this.newFormIDToolStripMenuItem.Name = "newFormIDToolStripMenuItem";
+            resources.ApplyResources(this.newFormIDToolStripMenuItem, "newFormIDToolStripMenuItem");
+            this.newFormIDToolStripMenuItem.Click += new System.EventHandler(this.newFormIDToolStripMenuItem_Click);
+            // 
+            // newFormIDNoReferenceUpdateToolStripMenuItem
+            // 
+            this.newFormIDNoReferenceUpdateToolStripMenuItem.Name = "newFormIDNoReferenceUpdateToolStripMenuItem";
+            resources.ApplyResources(this.newFormIDNoReferenceUpdateToolStripMenuItem, "newFormIDNoReferenceUpdateToolStripMenuItem");
+            this.newFormIDNoReferenceUpdateToolStripMenuItem.Click += new System.EventHandler(this.newFormIDNoReferenceUpdateToolStripMenuItem_Click);
             // 
             // OpenModDialog
             // 
@@ -1176,5 +1231,11 @@ namespace TESVSnip {
         private System.Windows.Forms.ToolStripMenuItem exportStringsToFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem importStringsToFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem internalizeStringReferencesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem insertGroupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newFormIDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uTF8ModeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newFormIDNoReferenceUpdateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pasteNewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
     }
 }
