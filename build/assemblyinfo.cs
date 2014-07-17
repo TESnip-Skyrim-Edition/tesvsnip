@@ -15,13 +15,11 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyCompany("TESVSnip")]
-[assembly: AssemblyTitle("TESVSnip (Skyrim Edition) - Version 4.3 (0)")]
 [assembly: AssemblyCopyright("Copyright (c) 2012")]
 [assembly: AssemblyTrademark("All Rights Reserved")]
 [assembly: CLSCompliant(false)]
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyVersion("4.3.4450.238")]
-[assembly: AssemblyFileVersion("4.3.4450.238")]
-[assembly: AssemblyInformationalVersion("TESVSnip (Skyrim Edition) - Version 4.3")]
+[assembly: AssemblyInformationalVersion("TESVSnip (Skyrim Edition) - Version 4.3.1b")]
 
 
