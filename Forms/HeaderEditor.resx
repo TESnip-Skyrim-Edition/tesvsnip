@@ -132,7 +132,7 @@
     <value>3</value>
   </data>
   <data name="cb0.Text" xml:space="preserve">
-    <value>0x00000001 (ESM file)</value>
+    <value>0x00000001 (Esm file)</value>
   </data>
   <data name="&gt;&gt;cb0.Name" xml:space="preserve">
     <value>cb0</value>
@@ -186,7 +186,7 @@
     <value>6</value>
   </data>
   <data name="cb3.Text" xml:space="preserve">
-    <value>0x00000008 (Has Current)</value>
+    <value>0x00000008</value>
   </data>
   <data name="&gt;&gt;cb3.Name" xml:space="preserve">
     <value>cb3</value>
@@ -240,7 +240,7 @@
     <value>8</value>
   </data>
   <data name="cb5.Text" xml:space="preserve">
-    <value>0x00000020 (Marked Deleted)</value>
+    <value>0x00000020 (Deleted)</value>
   </data>
   <data name="&gt;&gt;cb5.Name" xml:space="preserve">
     <value>cb5</value>
@@ -294,7 +294,7 @@
     <value>10</value>
   </data>
   <data name="cb7.Text" xml:space="preserve">
-    <value>0x00000080 (UseLocalizedString/IsPerch)</value>
+    <value>0x00000080 (Use Localized Strings)</value>
   </data>
   <data name="&gt;&gt;cb7.Name" xml:space="preserve">
     <value>cb7</value>
@@ -321,7 +321,7 @@
     <value>9</value>
   </data>
   <data name="cb6.Text" xml:space="preserve">
-    <value>0x00000040 (Has Tree LOD/Addon LOD Object)</value>
+    <value>0x00000040</value>
   </data>
   <data name="&gt;&gt;cb6.Name" xml:space="preserve">
     <value>cb6</value>
@@ -348,7 +348,7 @@
     <value>12</value>
   </data>
   <data name="cb9.Text" xml:space="preserve">
-    <value>0x00000200 (CastShad/OnLocMap/HidFromLocMap/StartDead)</value>
+    <value>0x00000200 (Casts shadow)</value>
   </data>
   <data name="&gt;&gt;cb9.Name" xml:space="preserve">
     <value>cb9</value>
@@ -375,7 +375,7 @@
     <value>11</value>
   </data>
   <data name="cb8.Text" xml:space="preserve">
-    <value>0x00000100 (Must Update Anims)</value>
+    <value>0x00000100</value>
   </data>
   <data name="&gt;&gt;cb8.Name" xml:space="preserve">
     <value>cb8</value>
@@ -402,7 +402,7 @@
     <value>14</value>
   </data>
   <data name="cb11.Text" xml:space="preserve">
-    <value>0x00000800 (Initially Disabled)</value>
+    <value>0x00000800 (Initially disabled)</value>
   </data>
   <data name="&gt;&gt;cb11.Name" xml:space="preserve">
     <value>cb11</value>
@@ -429,7 +429,7 @@
     <value>13</value>
   </data>
   <data name="cb10.Text" xml:space="preserve">
-    <value>0x00000400 (Quest Item/Persistent)</value>
+    <value>0x00000400 (Quest item/Persistant)</value>
   </data>
   <data name="&gt;&gt;cb10.Name" xml:space="preserve">
     <value>cb10</value>
@@ -510,7 +510,7 @@
     <value>18</value>
   </data>
   <data name="cb15.Text" xml:space="preserve">
-    <value>0x00008000 (Visible When Distant)</value>
+    <value>0x00008000 (Visable when distant)</value>
   </data>
   <data name="&gt;&gt;cb15.Name" xml:space="preserve">
     <value>cb15</value>
@@ -591,7 +591,7 @@
     <value>33</value>
   </data>
   <data name="cb30.Text" xml:space="preserve">
-    <value>0x40000000 (NavMesh Ground/No Respawn)</value>
+    <value>0x40000000</value>
   </data>
   <data name="&gt;&gt;cb30.Name" xml:space="preserve">
     <value>cb30</value>
@@ -618,7 +618,7 @@
     <value>32</value>
   </data>
   <data name="cb29.Text" xml:space="preserve">
-    <value>0x20000000 (Child Can Use/No Havok Settle)</value>
+    <value>0x20000000</value>
   </data>
   <data name="&gt;&gt;cb29.Name" xml:space="preserve">
     <value>cb29</value>
@@ -645,7 +645,7 @@
     <value>31</value>
   </data>
   <data name="cb28.Text" xml:space="preserve">
-    <value>0x10000000 (ReflectedByAutoWater/MustExitToTalk)</value>
+    <value>0x10000000</value>
   </data>
   <data name="&gt;&gt;cb28.Name" xml:space="preserve">
     <value>cb28</value>
@@ -672,7 +672,7 @@
     <value>30</value>
   </data>
   <data name="cb27.Text" xml:space="preserve">
-    <value>0x08000000 (NavMesh Bounding Box/Respawns)</value>
+    <value>0x08000000</value>
   </data>
   <data name="&gt;&gt;cb27.Name" xml:space="preserve">
     <value>cb27</value>
@@ -699,7 +699,7 @@
     <value>29</value>
   </data>
   <data name="cb26.Text" xml:space="preserve">
-    <value>0x04000000 (NavMesh Filter)</value>
+    <value>0x04000000</value>
   </data>
   <data name="&gt;&gt;cb26.Name" xml:space="preserve">
     <value>cb26</value>
@@ -726,7 +726,7 @@
     <value>28</value>
   </data>
   <data name="cb25.Text" xml:space="preserve">
-    <value>0x02000000 (Obstacle/No AI Acquire)</value>
+    <value>0x02000000</value>
   </data>
   <data name="&gt;&gt;cb25.Name" xml:space="preserve">
     <value>cb25</value>
@@ -753,7 +753,7 @@
     <value>27</value>
   </data>
   <data name="cb24.Text" xml:space="preserve">
-    <value>0x01000000 (Ignore Object Interaction)</value>
+    <value>0x01000000</value>
   </data>
   <data name="&gt;&gt;cb24.Name" xml:space="preserve">
     <value>cb24</value>
@@ -780,7 +780,7 @@
     <value>26</value>
   </data>
   <data name="cb23.Text" xml:space="preserve">
-    <value>0x00800000 (Is Marker)</value>
+    <value>0x00800000</value>
   </data>
   <data name="&gt;&gt;cb23.Name" xml:space="preserve">
     <value>cb23</value>
@@ -888,7 +888,7 @@
     <value>22</value>
   </data>
   <data name="cb19.Text" xml:space="preserve">
-    <value>0x00080000 (Can't Wait)</value>
+    <value>0x00080000 (Can't wait)</value>
   </data>
   <data name="&gt;&gt;cb19.Name" xml:space="preserve">
     <value>cb19</value>
@@ -915,7 +915,7 @@
     <value>21</value>
   </data>
   <data name="cb18.Text" xml:space="preserve">
-    <value>0x00040000 (Compressed Data)</value>
+    <value>0x00040000 (Compressed record)</value>
   </data>
   <data name="&gt;&gt;cb18.Name" xml:space="preserve">
     <value>cb18</value>
@@ -942,7 +942,7 @@
     <value>20</value>
   </data>
   <data name="cb17.Text" xml:space="preserve">
-    <value>0x00020000 (Dangerous/IsRadioStation/OffLimits/PortalStrict)</value>
+    <value>0x00020000 (Dangerous / Off limits (Interior cell))</value>
   </data>
   <data name="&gt;&gt;cb17.Name" xml:space="preserve">
     <value>cb17</value>
@@ -969,7 +969,7 @@
     <value>19</value>
   </data>
   <data name="cb16.Text" xml:space="preserve">
-    <value>0x00010000 (Is full LOD/Random Anim Start)</value>
+    <value>0x00010000 (Is full LOD)</value>
   </data>
   <data name="&gt;&gt;cb16.Name" xml:space="preserve">
     <value>cb16</value>
@@ -1244,9 +1244,9 @@
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>

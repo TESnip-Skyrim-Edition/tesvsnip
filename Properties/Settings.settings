@@ -72,7 +72,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="AutoCompressRecords" Type="System.String" Scope="User">
-      <Value Profile="(Default)">CELL;NPC_</Value>
+      <Value Profile="(Default)">REGN;NAVI;WRLD;DIAL;CELL;IMAD;WTHR</Value>
     </Setting>
     <Setting Name="EnableCompressionLimit" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
@@ -81,7 +81,7 @@
       <Value Profile="(Default)">1024</Value>
     </Setting>
     <Setting Name="UseHexSubRecordEditor" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="SearchMRUNameList" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)" />
